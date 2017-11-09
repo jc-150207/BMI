@@ -16,8 +16,8 @@ namespace BMI
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            double h = double.Parse(this.Height.Text);
-            double w = double.Parse(this.Weight.Text);
+            double h = double.Parse(this.height.Text);
+            double w = double.Parse(this.weight.Text);
 
             if (h >= 3)
             {
