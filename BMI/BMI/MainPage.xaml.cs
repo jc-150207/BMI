@@ -13,5 +13,43 @@ namespace BMI
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            double h = double.Parse(this.Height.Text);
+            double w = double.Parse(this.Weight.Text);
+
+            if (h >= 3)
+            {
+                h /= 100;
+            }
+            double bmi = w / h / h;
+
+            string s;
+
+            if (bmi >= 25)
+            {
+                s = "肥満";
+            }
+            else if ((bmi < 25) && (bmi > 18.5))
+            {
+                s = "標準体重";
+            }
+            else if (bmi <= 18.5)
+            {
+                s = "低体重";
+            }
+            else
+            {
+                s = "error";
+            }
+
+            DisplayAlert("BMI",s + "(" + bmi.ToString() + ")","OK");
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
