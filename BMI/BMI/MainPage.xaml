@@ -12,6 +12,7 @@
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="CenterAndExpand"
                    x:Name="height"/>
+            
             <Label Text="体重(kg)を入力してください"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
@@ -19,6 +20,7 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
                    x:Name="weight" />
+            
             <Button Text="BMI計算"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"
